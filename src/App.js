@@ -1,18 +1,9 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Login from './login.js';
+import React from 'react';
+import './styles/App.css';
+import Routes from './routes/Routes';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <Login />
-        </header>
-      </div>
-    );
-  }
+function App() {
+  return <Routes />;
 }
+
 export default App;
